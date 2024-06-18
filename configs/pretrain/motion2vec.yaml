@@ -1,6 +1,6 @@
 #Training
 learning_rate: 0.0005
-batch_size: 4  # 16
+batch_size: 4
 weight_decay: 0.01
 lr_decay: 0.99
 epochs: 60
@@ -8,7 +8,7 @@ train_2d: False
 
 # Model
 model_name: Pose2Vec
-n_layers: 8
+n_layers: 16
 dim_in: 3 
 dim_feat: 128
 dim_rep: 512

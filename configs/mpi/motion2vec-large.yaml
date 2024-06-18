@@ -9,7 +9,7 @@ epochs: 90
 model_name: MotionAGFormer
 n_layers: 26
 dim_in: 3
-dim_feat: 128
+dim_feat: 256
 dim_rep: 512
 dim_out: 3
 mlp_ratio: 4

@@ -1,16 +1,16 @@
 #Training
-learning_rate: 0.0005  # 0.0005
-batch_size: 8  # 8
-weight_decay: 0.01  # 0.01
-lr_decay: 0.99  # 0.99
+learning_rate: 0.0005
+batch_size: 8
+weight_decay: 0.01
+lr_decay: 0.99
 epochs: 60
 train_2d: False
 
 # Model
 model_name: MotionAGFormer
-n_layers: 16  # 16
+n_layers: 16
 dim_in: 3 
-dim_feat: 256
+dim_feat: 128
 dim_rep: 512
 dim_out: 3
 mlp_ratio: 4
@@ -43,7 +43,7 @@ add_velocity: False
 
 # Loss
 lambda_3d_velocity: 20.0
-lambda_scale: 0.0  # 0.5
+lambda_scale: 0.5
 lambda_lv: 0.0
 lambda_lg: 0.0
 lambda_a: 0.0
