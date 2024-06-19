@@ -30,18 +30,6 @@ This should create a gif file named `h36m_pose<SEQ_NUMBER>.gif` within `data` di
 Please refer to [P-STMO](https://github.com/paTRICK-swk/P-STMO#mpi-inf-3dhp) for dataset setup. After preprocessing, the generated .npz files (`data_train_3dhp.npz` and `data_test_3dhp.npz`) should be located at `data/motion3d` directory.
 #### Visualization
 Run it same as the visualization for Human3.6M, but `--dataset` should be set to `mpi`.
-## Pretraining
-After dataset preparation, you can pretrain the model as follows:
-```
-python pre_train.py --new-checkpoint checkpoint/pretrain --config <PATH-TO-CONFIG> > log/pretrain.log
-```
-where config files are located at `configs/pretrain`
-## Training
-After pretraining, you can train the model as follows:
-```
-python train.py --P2V_reload 1 -c checkpoint_pretrain/pretrain --checkpoint-file best_epoch.pth.tr --new-checkpoint checkpoint/finetune --config <PATH-TO-CONFIG> > log/finetune.log
-```
-where config files are located at `configs/h36m`.
 ## Evaluation
 
 After downloading our checkpoint, you can evaluate Human3.6M models by:
