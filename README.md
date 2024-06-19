@@ -32,7 +32,7 @@ Please refer to [P-STMO](https://github.com/paTRICK-swk/P-STMO#mpi-inf-3dhp) for
 Run it same as the visualization for Human3.6M, but `--dataset` should be set to `mpi`.
 ## Evaluation
 
-After downloading our checkpoint, you can evaluate Human3.6M models by:
+After downloading our checkpoint -[motion2vec-base](https://drive.google.com/file/d/16zKJyowWoKxtJpmxDgTLVhH0UdGMngg4/view?usp=drive_link), you can evaluate Human3.6M models by:
 ```
 python train.py --eval-only --checkpoint <CHECKPOINT-DIRECTORY> --checkpoint-file <CHECKPOINT-FILE-NAME> --config <PATH-TO-CONFIG>
 ```
